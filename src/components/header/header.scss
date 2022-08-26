@@ -1,0 +1,94 @@
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 9;
+}
+header.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.logo {
+    width: auto;
+}
+
+.menu {
+    width: auto;
+}
+
+.header-right {
+    width: auto;
+}
+
+.logo {
+    width: auto;
+}
+
+
+ul.mainmenu {
+    display: flex;
+    flex-wrap: wrap;
+    width: auto;
+}
+
+ul.mainmenu li {
+    margin: 0 15px;
+}
+
+ul.mainmenu li a {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 20px 0;
+    display: inline-block;
+    color: #1d1d24;
+}
+
+ul.mainmenu li a.active {
+    color: #f9004d;
+}
+
+.social-icons {
+    width: auto;
+}
+
+.social-icons ul {
+    display: flex;
+}
+
+.social-icons ul li {
+    margin: 0 6px;
+}
+
+.btn-wrapper a {
+    padding: 0 25px;
+    height: 46px;
+    display: inline-block;
+    line-height: 42px;
+    border: 2px solid #b1b4c1;
+    border-radius: 6px;
+    color: #c6c9d8;
+    font-size: 14px;
+    position: relative;
+    z-index: 2;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+    border: 2px solid rgba(29,29,36,.5);
+    color: #1d1d24;
+}
+
+.header-right .btn-wrapper {
+    margin-left: 50px;
+}
+
+.btn-wrapper a:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    color: #fff;
+    border: 2px solid #f9004d;
+    background: #f9004d;
+    border-radius: 6px;
+}

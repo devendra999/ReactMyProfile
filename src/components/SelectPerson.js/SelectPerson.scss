@@ -1,0 +1,79 @@
+
+.booking-section {
+    position: relative;
+    background: aliceblue;
+    padding: 100px 0;
+  }
+  
+  .booking-section .container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .booking-section .text {
+    padding: 10px;
+    background-color: antiquewhite;
+    border-radius: 5px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .booking-section .popup {
+    position: relative;
+    background-color: beige;
+    padding: 10px;
+    left: initial;
+    top: initial;
+    transform: none;
+    border-radius: 5px;
+    display: none;
+  }
+  .booking-section .popup.active {
+    display: block;
+  }
+  
+  .booking-section .popup .single:first-child {
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .booking-section .popup .single {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .booking-section .popup .single strong {
+    margin-right: 20px;
+    width: 72px;
+  }
+  
+  .booking-section .popup .single button {
+    background: #000;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .booking-section .popup .single span {
+    width: 50px;
+    text-align: center;
+  }
+  .booking-section .close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+    z-index: 2;
+  }

@@ -1,0 +1,92 @@
+.news-section {
+    padding: 100px 0;
+    background-color: #f8f9fc;
+}
+
+.news-section .section-title {
+    margin-bottom: 60px;
+}
+.news-list .content {
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.news-list .img-wrapper img {
+    width: 100%;
+    max-width: 100%;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.news-list .content:after {
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#fc004d),to(#000));
+    background: -webkit-linear-gradient(top,#fc004d,#000);
+    background: linear-gradient(180deg,#fc004d 0,#000);
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: 1;
+    opacity: 0;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.news-list .info {
+    position: absolute;
+    bottom: -100px;
+    width: 100%;
+    padding: 50px 35px;
+    z-index: 3;
+    color: #fff;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.news-list .info span {
+    color: #fff;
+}
+
+.news-list .info:before {
+    content: "";
+    position: absolute;
+    background: -webkit-gradient(linear,left top,left bottom,color-stop(0,transparent),color-stop(70%,#000));
+    background: -webkit-linear-gradient(top,transparent,#000 70%);
+    background: linear-gradient(180deg,transparent 0,#000 70%);
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    z-index: -1;
+    -webkit-transition: all .3s cubic-bezier(.645,.045,.355,1);
+    transition: all .3s cubic-bezier(.645,.045,.355,1);
+}
+
+.news-list .info .btn-wrapper a {
+    border-color: #f9004d;
+    color: #fff;
+}
+
+.news-list .info .btn-wrapper {
+    margin-top: 40px;
+}
+.news-list .content:hover .img-wrapper img {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.news-list .content:hover:after {
+    opacity: .85;
+    top: 0;
+}
+.news-list .content:hover .info {
+    bottom: 0;
+}
+.news-list .content:hover .info:before {
+    opacity: 0;
+}

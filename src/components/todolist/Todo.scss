@@ -1,0 +1,70 @@
+.todo-section {
+    padding: 100px 0;
+    background: #f8f9fc;
+}
+
+.todo-wrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.todo-wrapper .inputarea {
+    position: relative;
+}
+
+.todo-wrapper button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background: #000;
+    color: #fff;
+    border: 0;
+    font-size: 12px;
+    padding: 5px;
+    border-radius: 5px;
+    line-height: normal;
+    min-width: 36px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.todo-wrapper .inputarea input[type="text"] {
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-radius: 0;
+    background: aliceblue;
+}
+
+.input-item {
+    position: relative;
+}
+
+.input-item .single-item {
+    position: relative;
+    margin-top: 10px;
+    padding: 10px 10px;
+    background: antiquewhite;
+}
+
+.input-item .single-item .edit {
+    right: 50px;
+}
+
+.input-item .single-item .del {
+    right: 10px;
+}
+.removeall button {
+    position: relative;
+    top: initial;
+    left: initial;
+    right: initial;
+    bottom: inherit;
+    transform: none;
+}
+
+.removeall {
+    margin-top: 30px;
+}

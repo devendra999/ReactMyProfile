@@ -1,0 +1,18 @@
+.color-section li .bg {
+    width: 20px;
+    height: 20px;
+    display: inline-flex;
+    border: 2px solid #000;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.color-section ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-section li {
+    margin: 18px 14px;
+}

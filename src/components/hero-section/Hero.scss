@@ -1,0 +1,29 @@
+.hero-section {
+    position: relative;
+    height: 950px;
+    display: flex;
+    align-items: center;
+}
+
+.content span {
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.content h1 {
+    color: #1f1f25;
+    font-size: 75px;
+    font-weight: 900;
+    font-family: Montserrat,sans-serif;
+    line-height: 90px;
+    text-transform: inherit;
+    width: 70%;
+}
+
+.content h1 b {
+    color: #f9004d;
+}

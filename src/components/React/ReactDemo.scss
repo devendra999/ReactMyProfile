@@ -1,0 +1,291 @@
+.main-slider {
+    position: relative;
+    padding: 50px 0;
+}
+
+.slick-slider .slick-arrow:before {
+    color: #000;
+    font-size: 32px;
+}
+
+.slick-slider .slick-arrow {
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    z-index: 1;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-dots li button:before {
+    font-size: 14px;
+}
+
+.hotel-slider .single-item {
+    position: relative;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.hotel-slider .single-item .img-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.hotel-slider .single-item .info {
+    padding: 20px;
+}
+
+.hotel-slider .single-item .info p {
+    margin-bottom: 0;
+}
+
+.hotel-slider .single-item .info span {
+    margin-right: 10px;
+    color: #c0c0c0;
+    font-size: 14px;
+}
+
+.hotel-slider .single-item .info span.d-block {
+    color: #000;
+}
+.hotel-slider .slick-slide {
+    padding: 0 10px;
+}
+
+.hotel-slider .slick-list {
+    margin: 0 -10px;
+}
+
+.acc-wrapper {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+}
+
+.acc-section {
+    padding: 50px 0;
+    background: #f8f9fc;
+}
+
+.acc-wrapper .acc-title {
+    background: antiquewhite;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    text-transform: capitalize;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.acc-wrapper .acc-content {
+    background: #ddf8ff;
+    padding: 10px;
+    display: none;
+}
+.acc-wrapper .active .acc-content {
+    display: block;
+}
+
+.acc-wrapper .acc-title:before {
+    position: absolute;
+    content: '+';
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 21px;
+}
+
+.acc-wrapper .active .acc-title:before {
+    content: '-';
+}
+
+.filter-section {
+    padding: 50px 0;
+}
+
+.filter-btn ul {
+    display: flex;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.filter-btn ul li {
+    margin-right: 10px;
+}
+
+.filter-btn button {
+    background: #ccc;
+    border: 0;
+    padding: 5px 12px;
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.filter-list .single-list {
+    margin-bottom: 30px;
+}
+
+.filter-list .content {
+    border: 1px solid #ccc;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.filter-list .content .image-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.filter-list .content .info {
+    padding: 20px;
+}
+
+.filter-list .content .image-wrapper {
+    position: relative;
+}
+
+.filter-list .content .image-wrapper span {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-radius: 100%;
+    margin: 0;
+    font-weight: 500;
+}
+
+.filter-list .content h4 {
+    text-transform: capitalize;
+}
+
+.filter-list .content span {
+    margin-bottom: 0;
+}
+
+.filter-btn .active button {
+    background: #e3a500;
+}
+
+.api-list .single-list {
+    margin-bottom: 30px;
+}
+
+.api-list .content {
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.api-list .image-wrapper img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.api-list .info {
+    padding: 20px;
+}
+
+.api-list .info h4 {
+    font-size: 21px;
+}
+
+.content.loader > span {
+    margin-bottom: 0;
+}
+
+.content.loader br {
+    display: none;
+}
+
+.image-section {
+    position: relative;
+}
+
+.image-section > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+}
+
+.image-section > img.active {
+    display: block;
+}
+
+.image-section .container {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+}
+
+.select-image-wrapper .single-image {
+    width: calc(100% / 6);
+    border: 2px solid #ccc;
+    padding: 0;
+    cursor: pointer;
+}
+
+.select-image-wrapper {
+    justify-content: center;
+}
+
+.select-image-wrapper .single-image img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+}
+
+.select-image-wrapper .single-image.active {
+    border-color: #f00;
+}
+
+.popup {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 500px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    z-index: 99;
+  }
+  
+  .popup .close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    font-weight: 700;
+  }
+
+  .image-section button {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 9px 30px;
+}
